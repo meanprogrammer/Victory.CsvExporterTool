@@ -9,7 +9,8 @@ namespace Tools.CsvDataExporter
     {
         static void Main(string[] args)
         {
-
+            ExportToCsvTask task = new ExportToCsvTask();
+            task.Execute();
         }
     }
 }
