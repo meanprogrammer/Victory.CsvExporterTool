@@ -28,7 +28,9 @@ namespace Tools.CsvDataExporter
                 while (reader.Read())
                 {
                     string tableName = reader.GetString(0);
+                    Console.WriteLine("Exporting {0}...", tableName);
                     ExportTableToCSV(tableName);
+                    Console.WriteLine("Done Exporting {0}...", tableName);
                 }
             }
         }

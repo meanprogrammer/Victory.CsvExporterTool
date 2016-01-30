@@ -11,6 +11,7 @@ namespace Tools.CsvDataExporter
         {
             ExportToCsvTask task = new ExportToCsvTask();
             task.Execute();
+            Console.ReadLine();
         }
     }
 }
